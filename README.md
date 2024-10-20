@@ -1,39 +1,91 @@
-# Actitat 1:
-Establim els middlewares:
-![alt text](image-1.png)
+# Activitat 1
 
+## Establiment de Middlewares
 
-Adaptam l'ALumneModel a la consulta actual, que involucra a DescAula i lleva la id De aula i alumne.
-![alt text](image-2.png)
-Aixi queda el js:
-![alt text](image-3.png)
+En aquesta activitat, hem configurat els middlewares necessaris per a la nostra aplicació.
 
-Resultat Final:
+![Establiment de Middlewares](image-1.png)
 
-![alt text](image.png)
+## Adaptació de l'AlumneModel
 
-# Activitat 2:
-Aquest es la modificacio principal, hi agregam les opcions ordeby,contain,skip i limit.
+Hem adaptat l'`AlumneModel` a la consulta actual, que ara inclou el camp `DescAula` i elimina les identificacions (`id`) de l'aula i de l'alumne.
 
-![alt text](image-4.png)
+![Adaptació de l'AlumneModel](image-2.png)
 
-Exemples de execucio: 
-![alt text](image-5.png)
-Resposta:
+## Codi JavaScript
 
-![alt text](image-6.png)
-Tots els camps son opcionals.
-en cas de que no existesqui el nom:
+A continuació, presentem la versió actualitzada del codi JavaScript:
 
-![alt text](image-7.png)
+![Codi JavaScript](image-3.png)
+
+## Resultat Final
+
+El resultat final de la implementació es mostra a continuació:
+
+![Resultat Final](image.png)
+
+---
+
+# Activitat 2
+
+## Modificació Principal
+
+Aquesta activitat inclou una modificació significativa en la funcionalitat, on hem afegit les opcions `orderby`, `contain`, `skip` i `limit`.
+
+![Modificació Principal](image-4.png)
+
+## Exemples d'Execució
+
+Aquí tenim alguns exemples d'execució de les noves funcionalitats:
+
+![Exemples d'Execució](image-5.png)
+
+## Resposta
+
+Les respostes que retornem són les següents:
+
+![Resposta](image-6.png)
+
+**Nota:** Tots els camps són opcionals. Si el nom no existeix, el sistema ho gestionarà adequadament:
+
+![Gestió d'Errors](image-7.png)
+
+---
+
 # Activitat 3
-Cridam alumnesCSV
-![alt text](image-8.png)
-Ho separam per ,:
-![alt text](image-9.png)
-Llevam la primera linea ques es comentari:
-![alt text](image-10.png)
-Codi:
 
+## Crida a alumnesCSV
 
-![alt text](image-11.png)
+Hem implementat la funcionalitat `alumnesCSV`, que ens permet gestionar la importació de dades des d'un fitxer CSV.
+
+![Crida a alumnesCSV](image-8.png)
+
+## Separació de Dades
+
+Les dades del fitxer CSV es separen per comes (`,`):
+
+![Separació de Dades](image-9.png)
+
+## Eliminació de la Primera Línia
+
+Eliminem la primera línia del CSV, que és un comentari:
+
+![Eliminació de la Primera Línia](image-10.png)
+
+## Codi
+
+El codi per a la gestió de la importació es mostra a continuació:
+
+![Codi de Gestió](image-11.png)
+
+## Afegint el CSV
+
+Finalment, afegim les dades del CSV a la base de dades:
+
+![Afegint el CSV](image-12.png)
+
+## Resultat Final
+
+La implementació acaba amb els següents resultats:
+
+![Resultat Final](image-13.png)

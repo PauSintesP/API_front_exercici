@@ -54,6 +54,7 @@ def alumnesCSV(file: UploadFile):
             descAula, edifici, pis, nomAlumne, cicle, curs, grup = row
 
             cur.execute("SELECT idAula FROM Aula WHERE DescAula = %s", (descAula,))
+            
             aula = cur.fetchone()
             
             if not aula:
